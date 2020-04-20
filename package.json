@@ -1,0 +1,14 @@
+{
+  "name": "create-ts-web-app",
+  "version": "0.0.1",
+  "description": "Create base template for ts web app",
+  "license": "MIT",
+  "bin": {
+    "create-ts-web-app": "./bin/index.js"
+  },
+  "author": "Aleksandr Voloshchenko <voloshchenkoal@gmail.com>",
+  "dependencies": {
+    "commander": "^5.0.0",
+    "fs-extra": "^9.0.0"
+  }
+}
