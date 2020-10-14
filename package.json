@@ -1,14 +1,29 @@
 {
-  "name": "create-ts-web-app",
-  "version": "0.0.1",
-  "description": "Create base template for ts web app",
-  "license": "MIT",
-  "bin": {
-    "create-ts-web-app": "./bin/index.js"
-  },
-  "author": "Aleksandr Voloshchenko <voloshchenkoal@gmail.com>",
-  "dependencies": {
-    "commander": "^5.0.0",
-    "fs-extra": "^9.0.0"
-  }
+    "name": "create-ts-web-app",
+    "version": "0.0.1",
+    "description": "Create web app with typescript support",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/VoloshchenkoAl/create-ts-web-app.git"
+    },
+    "license": "MIT",
+    "bin": {
+        "create-ts-web-app": "./bin/index.js"
+    },
+    "author": "Aleksandr Voloshchenko <voloshchenkoal@gmail.com>",
+    "dependencies": {
+        "commander": "^5.0.0",
+        "fs-extra": "^9.0.0"
+    },
+    "files": [
+        "bin",
+        "template"
+    ],
+    "bugs": {
+        "url": "https://github.com/VoloshchenkoAl/create-ts-web-app/issues"
+    },
+    "keywords": [
+        "typescript",
+        "create web app"
+    ]
 }
