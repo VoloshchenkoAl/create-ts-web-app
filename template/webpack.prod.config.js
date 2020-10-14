@@ -19,17 +19,13 @@ module.exports = {
             },
             {
                 test: /\.s[ac]ss$/,
-                use: [
-                    MiniCssExtractPlugin.loader,
-                    'css-loader',
-                    'sass-loader',
-                ]
-            }
-        ]
+                use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
+            },
+        ],
     },
     resolve: {
         extensions: ['.ts', '.js', '.json'],
-        modules: ['node_modules']
+        modules: ['node_modules'],
     },
     plugins: [
         new CleanWebpackPlugin(),
@@ -37,7 +33,7 @@ module.exports = {
             filename: '[name].[hash].css',
         }),
         new HtmlWebpackPlugin({
-            template: path.join(__dirname, 'public', 'index.html')
+            template: path.join(__dirname, 'public', 'index.html'),
         }),
-    ]
+    ],
 };
