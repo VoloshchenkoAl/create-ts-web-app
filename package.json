@@ -1,6 +1,6 @@
 {
     "name": "create-ts-web-app",
-    "version": "0.0.2",
+    "version": "0.0.4",
     "description": "Create web app with typescript support",
     "repository": {
         "type": "git",
