@@ -18,25 +18,22 @@ module.exports = {
             },
             {
                 test: /\.s[ac]ss$/,
-                use: [
-                    'style-loader',
-                    'css-loader',
-                    'sass-loader',
-                ]
-            }
-        ]
+                use: ['style-loader', 'css-loader', 'sass-loader'],
+            },
+        ],
     },
     devServer: {
         contentBase: path.join(__dirname, 'src'),
         hot: true,
+        port: 8080,
     },
     resolve: {
         extensions: ['.ts', '.js', '.json'],
-        modules: ['node_modules']
+        modules: ['node_modules'],
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: path.join(__dirname, 'public', 'index.html')
+            template: path.join(__dirname, 'public', 'index.html'),
         }),
-    ]
+    ],
 };

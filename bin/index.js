@@ -12,13 +12,12 @@ let projectName;
 program
     .version(packageJson.version)
     .arguments('<project-directory>')
-    .action(name => {
+    .action((name) => {
         projectName = name;
     })
     .parse(process.arg);
 
 createApp({ name: projectName });
-
 
 function createApp({ name }) {
     console.log('Installing...');
@@ -27,11 +26,10 @@ function createApp({ name }) {
     const templateDirPath = path.resolve(__dirname, '../', 'template');
     fs.ensureDirSync(root);
     fs.copySync(templateDirPath, root);
-    fs.writeFileSync(
-        path.join(root, 'package.json'),
-        updatePackageJson()
-    );
+    fs.writeFileSync(path.join(root, 'package.json'), updatePackageJson());
     install({ cwd: root });
+
+    console.log('Done');
 }
 
 function updatePackageJson() {
